@@ -342,7 +342,7 @@ export default function App() {
 
   return (
     <div style={{
-      width: '100%', maxWidth: '780px', height: '100vh',
+      width: '100%', maxWidth: '100%', height: '100vh',
       display: 'flex', flexDirection: 'column', background: '#0f0f0f',
       fontFamily: 'Georgia, serif'
     }}>
@@ -410,7 +410,7 @@ export default function App() {
       )}
 
       {/* Messages */}
-      <div style={{ flex: 1, overflowY: 'auto', padding: '20px 24px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+      <div style={{ flex: 1, overflowY: 'auto', padding: '20px 40px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
         {messages.map((msg, i) => (
           <div key={i} style={{ display: 'flex', justifyContent: msg.role === 'user' ? 'flex-end' : 'flex-start' }}>
             <div style={{
