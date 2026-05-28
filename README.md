@@ -3,7 +3,7 @@
 An AI-powered study tool that transforms your documents into summaries, 
 flashcards, and quizzes — entirely in the browser, no backend required.
 
-🔗 **Live Demo:** [https://study-agent-mu.vercel.app/](https://study-agent-nmytz143b-nakshathra305s-projects.vercel.app/)
+🔗 **Live Demo:** (https://study-agent-nakshathra.vercel.app/)
 
 ## What it does
 Upload a PDF, TXT, or MD file and instantly get:
