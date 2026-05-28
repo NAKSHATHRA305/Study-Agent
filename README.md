@@ -1,16 +1,41 @@
-# React + Vite
+# Study Agent 🧠
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered study tool that transforms your documents into summaries, 
+flashcards, and quizzes — entirely in the browser, no backend required.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://study-agent-mu.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What it does
+Upload a PDF, TXT, or MD file and instantly get:
+- 📄 **Summaries** — concise breakdown of key concepts
+- 🃏 **Flashcards** — auto-generated Q&A cards for revision
+- 📝 **Quizzes** — test your understanding from your own material
+- 💬 **Document Q&A** — ask questions, get answers grounded in your file
 
-## React Compiler
+## Tech Stack
+`React` `Vite` `OpenRouter API` `PDF.js`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## How it works
+1. User uploads a PDF, TXT, or MD file
+2. PDF.js parses the document client-side (no file ever leaves your browser)
+3. Extracted text is injected into system prompts sent to the LLM via OpenRouter API
+4. AI returns summaries, flashcards, or quizzes grounded in your actual content
 
-## Expanding the ESLint configuration
+## Key Features
+- **Zero backend** — all parsing happens client-side via PDF.js
+- **3 file formats supported** — PDF, TXT, Markdown
+- **3 study output types** — summaries, flashcards, quizzes
+- **Document-aware AI** — responses are anchored to your uploaded content,
+  not generic knowledge
+- **CI/CD via GitHub** — auto-deploys to Vercel on every push
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run Locally
+git clone https://github.com/NAKSHATHRA305/Study-Agent
+cd Study-Agent
+npm install
+
+
+
+## Deployment
+Deployed on Vercel with environment variable management.
+Any push to `main` triggers an automatic redeploy via GitHub CI/CD.
